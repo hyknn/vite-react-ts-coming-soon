@@ -6,7 +6,7 @@ import {
   MoveDirection,
   OutMode,
 } from '@tsparticles/engine';
-import { loadSlim } from "@tsparticles/slim";
+import { loadSlim } from '@tsparticles/slim';
 
 const App = () => {
   const [init, setInit] = useState(false);
@@ -28,10 +28,10 @@ const App = () => {
       fullScreen: { enable: true },
       particles: {
         color: {
-          value: "#ffffff",
+          value: '#ffffff',
         },
         links: {
-          color: "#ffffff",
+          color: '#ffffff',
           distance: 150,
           enable: true,
           opacity: 0.5,
@@ -57,7 +57,7 @@ const App = () => {
           value: 0.5,
         },
         shape: {
-          type: "circle",
+          type: 'circle',
         },
         size: {
           value: { min: 1, max: 5 },
@@ -76,10 +76,12 @@ const App = () => {
           particlesLoaded={particlesLoaded}
           options={options}
         />
-        <h1 className="text-4xl font-bold mb-4">Coming Soon</h1>
-        <p className="text-lg mb-6">
-          We're working hard to bring something awesome. Stay tuned!
-        </p>
+        <div className="z-1">
+          <h1 className="text-4xl font-bold mb-4">Coming Soon</h1>
+          <p className="text-lg mb-6">
+            We're working hard to bring something awesome. Stay tuned!
+          </p>
+        </div>
       </div>
     );
   }
